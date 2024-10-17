@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pr-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML tags de formulario</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <form>
+        <fieldset>
+            <legend>Dados pessoais</legend>
+            <div class="linha">
+                <div class="coluna">
+                    <label for="Nome">Nome</label>
+                    <input id="nome" type="text" placeholder="Digite o nome" />
+                </div>
+                <div class="coluna">
+                    <label for="email">Email</label>
+                    <input id="email" type="email" placeholder="email@email.com" />
+                </div>
+            </div>
+            <div class="linha">
+                <div class="coluna">
+                    <label for="genero">Gênero</label>
+                    <select id="genero">
+                        <option>Masculino</option>
+                        <option>Feminino</option>
+                        <option>Outros</option>
+                        <option>Prefiro não informar</option>
+                    </select>
+                </div>
+                <div class="coluna">
+                    <label for="cpf">CPF</label>
+                    <input id="cpf" type="text" placeholder="000.000.000-00" />
+                </div>
+                <div class="coluna">
+                    <label for="telefone">Telefone</label>
+                    <input id="telefone" type="tel" placeholder="(00) 00000-0000" />
+                </div>
+                <div class="coluna">
+                    <label for="dataNascimento">Data de Nascimento</label>
+                    <input id="dataNascimento" type="date" />
+                </div>
+            </div>
+        </fieldset>
+        
+        <fieldset>
+            <legend>Endereço</legend>
+            <div class="linha">
+                <div class="coluna">
+                    <label for="endereco">Endereco</label>
+                    <input id="endereco" type="text" placeholder="Av/Rua..." />
+                </div>
+                <div class="coluna">
+                    <label for="bairro">Bairro</label>
+                    <input id="bairro" type="text" placeholder="Bairro" />
+                </div>
+                <div class="coluna">
+                    <label for="cidade">Cidade</label>
+                    <input id="cidade" type="text" placeholder="Cidade" />
+                </div>
+            </div>
+        </fieldset>
+
+        <fieldset>
+            <legend>Formação</legend>
+            <div class="linha">
+                <div class="coluna">
+                    <label for="unidade">Unidade</label>
+                    <select id="unidade">
+                        <option>Aldeota</option>
+                        <option>Sul</option>
+                        <option>Norte</option>
+                    </select>
+                </div>
+                <div class="coluna">
+                    <label for="curso">Curso</label>
+                    <select id="curso">
+                        <option>FullStack</option>
+                        <option>Marketing Digital</option>
+                        <option>Data Analytics</option>
+                        <option>UI/UX</option>
+                    </select>
+                </div>
+                <div class="coluna">
+                    <label for="turno">Turno</label>
+                    <select id="turno">
+                        <option >Manhã</option>
+                        <option >Tarde</option>
+                        <option >Noite</option>
+                    </select>
+                </div>
+        </fieldset>
+        <button type="submit">Cadastrar</button>    
+    </form>
+</body>
+</html>
